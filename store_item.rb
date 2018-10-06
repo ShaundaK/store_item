@@ -10,23 +10,26 @@
 
 class Article
 
+  attr_reader :name, :color, :price
+  attr_writer :price
+
   def initialize(name, color, price)
     @name = name
     @color = color
     @price = price
   end 
 
-    def name
-      @name
-    end
+    # def name
+    #   @name
+    # end
 
-    def color
-      @color
-    end
+    # def color
+    #   @color
+    # end
 
-    def price
-      @price
-    end
+    # def price
+    #   @price
+    # end
 end
 
 article_one = Article.new("scarf", "grey", 10)

@@ -18,23 +18,12 @@ class Article
     @color = color
     @price = price
   end 
-
-    # def name
-    #   @name
-    # end
-
-    # def color
-    #   @color
-    # end
-
-    # def price
-    #   @price
-    # end
 end
 
 article_one = Article.new("scarf", "grey", 10)
 artice_two = Article.new("hat", "red", 5)
 article_three = Article.new("shirt", "green", 15)
-p article_one.name
-p article_one.color
+puts article_one.name
+puts article_one.color
+puts article_one.price
 

@@ -18,12 +18,16 @@ class Article
     @color = input_options[:color]
     @price = input_options[:price]
   end 
+
+  def print_info
+    p "This beautiful #{color} #{name} is on sale for $#{price}"
+  end
 end
 
 article_one = Article.new({:name => "scarf", :color => "grey", :price => 10})
-puts article_one.name
-puts article_one.color
-puts article_one.price
+article_one.print_info
+# puts article_one.color
+# puts article_one.price
 artice_two = Article.new({:name => "hat", :color => "red", :price => 5})
 article_three = Article.new({:name => "shirt", :color => "green", :price => 15})
 

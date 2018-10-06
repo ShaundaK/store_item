@@ -13,17 +13,20 @@ class Article
   attr_reader :name, :color, :price
   attr_writer :price
 
-  def initialize(name, color, price)
-    @name = name
-    @color = color
-    @price = price
+  def initialize(input_options)
+    @name = input_options[:name]
+    @color = input_options[:color]
+    @price = input_options[:price]
   end 
 end
 
-article_one = Article.new("scarf", "grey", 10)
-artice_two = Article.new("hat", "red", 5)
-article_three = Article.new("shirt", "green", 15)
+article_one = Article.new({:name => "scarf", :color => "grey", :price => 10})
 puts article_one.name
 puts article_one.color
 puts article_one.price
+artice_two = Article.new({:name => "hat", :color => "red", :price => 5})
+article_three = Article.new({:name => "shirt", :color => "green", :price => 15})
+
+
+
 
